@@ -14,45 +14,52 @@ export const portfolio = {
   /* -------------------------------------------------------------- */
   site: {
     /** URL pública final (sem barra no fim). Usada em metadata/OG/sitemap. */
-    url: "https://portfolio-head.vercel.app",
+    url: "https://lucaslovisi.vercel.app",
     /** Timezone exibido no relógio do hero. */
     timezone: "America/Sao_Paulo",
-    timezoneLabel: "São Paulo, BR",
+    timezoneLabel: "São Leopoldo, RS",
   },
 
   /* -------------------------------------------------------------- */
   /*  PESSOA                                                        */
   /* -------------------------------------------------------------- */
   person: {
-    name: "[Seu Nome Aqui]",
+    name: "Lucas Lovisi",
     /** Linha de cargo exibida no hero. */
-    role: "Head de Design",
+    role: "Designer & Desenvolvedor Web",
     /** Cidade/estado mostrados no Sobre. */
-    location: "São Paulo, Brasil",
+    location: "São Leopoldo, RS",
     /** Frase curta abaixo do nome no hero (≤ 90 caracteres). */
     tagline:
-      "Construindo marcas e produtos com identidade, intenção e acabamento.",
+      "Sites, marca e peças sociais — design que conecta clareza, código e resultado.",
     /** Status atual exibido no hero. */
     status: "Disponível para projetos",
     /**
      * Bio completa exibida na seção Sobre.
      * Use \n\n para quebrar parágrafos.
      */
-    bio: `Sou Head de Design em uma agência de marketing focada em performance e marca. Lidero o time criativo na concepção de identidades visuais, campanhas e experiências digitais que conectam estratégia, estética e resultado.
+    bio: `Sou Designer Gráfico e Web Designer com 5 anos de experiência criando sites, identidades e peças para social media. Atuo hoje como Designer & Desenvolvedor Web nas marcas Mobo Cupons e MyTripMenu, levando o projeto da concepção visual ao desenvolvimento em WordPress.
 
-Meu trabalho atravessa branding, direção de arte, motion e produto. Acredito que design é uma ferramenta de clareza — e que toda decisão visual carrega uma intenção.`,
+Curso Análise e Desenvolvimento de Sistemas na UNISINOS, o que mantém meu trabalho na fronteira entre design e código — sites que funcionam tão bem quanto parecem.`,
     /** Foto principal exibida no Sobre. Coloque em /public/images/. */
     photo: {
       src: "/images/profile-placeholder.svg",
-      alt: "Retrato do designer",
+      alt: "Lucas Lovisi",
     },
     /** Áreas de atuação exibidas como tags no Sobre. */
     focusAreas: [
+      "Web Design",
+      "WordPress",
+      "Design Gráfico",
       "Branding",
-      "Direção de Arte",
-      "UI / Produto",
-      "Motion",
-      "Estratégia de Marca",
+      "Social Media",
+      "SEO",
+    ],
+    /** Estatísticas exibidas no Sobre (até 3 itens). */
+    stats: [
+      { label: "Anos atuando", value: "5+" },
+      { label: "Projetos entregues", value: "30+" },
+      { label: "Sites em WordPress", value: "20+" },
     ],
   },
 
@@ -61,22 +68,22 @@ Meu trabalho atravessa branding, direção de arte, motion e produto. Acredito q
   /* -------------------------------------------------------------- */
   contact: {
     /** Número internacional sem símbolos (ex: 5511999999999). */
-    whatsappNumber: "5511999999999",
+    whatsappNumber: "5594981130262",
     /** Mensagem pré-preenchida no WhatsApp. */
     whatsappMessage:
-      "Olá! Vim pelo seu portfólio e gostaria de conversar sobre um projeto.",
+      "Olá, Lucas! Vim pelo seu portfólio e gostaria de conversar sobre um projeto.",
     /** E-mail público opcional. */
-    email: "contato@exemplo.com",
+    email: "lucaslovisi2018@gmail.com",
   },
 
   /* -------------------------------------------------------------- */
   /*  REDES SOCIAIS                                                 */
   /* -------------------------------------------------------------- */
   socials: [
-    { key: "linkedin", label: "LinkedIn", href: "https://linkedin.com/in/seu-perfil" },
-    { key: "instagram", label: "Instagram", href: "https://instagram.com/seu-perfil" },
-    { key: "behance", label: "Behance", href: "https://behance.net/seu-perfil" },
-    { key: "email", label: "E-mail", href: "mailto:contato@exemplo.com" },
+    { key: "linkedin", label: "LinkedIn", href: "https://linkedin.com/in/lucaslovisi" },
+    { key: "instagram", label: "Instagram", href: "https://instagram.com/lucaslovisi" },
+    { key: "behance", label: "Behance", href: "https://behance.net/lucaslovisi" },
+    { key: "email", label: "E-mail", href: "mailto:lucaslovisi2018@gmail.com" },
   ] satisfies Social[],
 
   /* -------------------------------------------------------------- */
@@ -84,32 +91,32 @@ Meu trabalho atravessa branding, direção de arte, motion e produto. Acredito q
   /* -------------------------------------------------------------- */
   experiences: [
     {
-      role: "Head de Design",
-      company: "Agência [Nome]",
-      period: "2023 — Atual",
+      role: "Designer & Desenvolvedor Web",
+      company: "Mobo Cupons & MyTripMenu",
+      period: "2024 — Atual",
       description:
-        "Liderança do time de design (8 pessoas), direção de arte de campanhas integradas e construção do design system interno da agência.",
+        "Sites institucionais e landing pages em WordPress, identidade aplicada em campanhas e peças contínuas para social media. Atuação ponta a ponta entre design visual e implementação.",
     },
     {
-      role: "Design Lead",
-      company: "Estúdio [Nome]",
-      period: "2020 — 2023",
+      role: "Designer Gráfico e Web",
+      company: "Carmillion",
+      period: "2023 — 2024",
       description:
-        "Projetos de branding e identidade para clientes de varejo, tecnologia e cultura. Atuação ponta a ponta — da estratégia ao acabamento.",
+        "Criação de sites, landing pages e materiais visuais para clientes da empresa, com foco em conversão e consistência de marca em todos os pontos de contato.",
     },
     {
-      role: "Designer Sênior",
-      company: "[Empresa Anterior]",
-      period: "2018 — 2020",
+      role: "Designer & Web Freelancer",
+      company: "Projetos independentes",
+      period: "2021 — 2023",
       description:
-        "UI, motion e direção visual para produtos digitais e campanhas de marca em larga escala.",
+        "Sites em WordPress, identidades visuais e peças para social media para pequenos negócios e marcas autorais. Aprendizado direto com cliente — briefing, entrega e ajustes.",
     },
     {
-      role: "Designer",
-      company: "[Primeira Agência]",
-      period: "2015 — 2018",
+      role: "Iniciando em design",
+      company: "Estudos e primeiros projetos",
+      period: "2020 — 2021",
       description:
-        "Atuação como generalista — peças sociais, landing pages, papelarias e direção de fotografia.",
+        "Fundamentos de tipografia, layout e design digital. Primeiras peças, autodidatismo e construção do portfólio inicial entre o ensino médio e o ingresso na faculdade.",
     },
   ] satisfies Experience[],
 
@@ -118,103 +125,58 @@ Meu trabalho atravessa branding, direção de arte, motion e produto. Acredito q
   /* -------------------------------------------------------------- */
   projects: [
     {
-      slug: "marca-aurora",
-      title: "Aurora",
-      category: "Branding",
-      year: 2025,
+      slug: "mobo-cupons",
+      title: "Mobo Cupons",
+      category: "Web & Identidade",
+      year: 2024,
       thumbnail: {
         src: "/images/project-placeholder-1.svg",
-        alt: "Capa do projeto Aurora",
+        alt: "Mobo Cupons — design e desenvolvimento web",
       },
-      gallery: [
-        { src: "/images/project-placeholder-1.svg", alt: "Aurora — capa" },
-        { src: "/images/project-placeholder-2.svg", alt: "Aurora — aplicações" },
-      ],
       summary:
-        "Identidade e sistema visual para uma marca de skincare premium.",
-      description: `Aurora nasceu da necessidade de uma marca de cuidados com a pele se diferenciar em um mercado saturado de minimalismo genérico. O sistema combina uma tipografia editorial customizada, paleta dessaturada e uma linguagem fotográfica de luz natural.
+        "Site, landing pages e peças sociais para plataforma de cupons de desconto.",
+      description: `Trabalho contínuo de design e desenvolvimento web para a Mobo Cupons. O escopo cobre o site institucional em WordPress, landing pages para campanhas pontuais e um sistema visual aplicado em peças recorrentes de social media.
 
-Liderei a estratégia visual, a construção do logotipo e o desenvolvimento do guia de marca completo, incluindo motion e diretrizes de campanha.`,
-      role: "Direção criativa e identidade visual",
-      stack: ["Illustrator", "Figma", "After Effects"],
-      tags: ["Branding", "Identidade", "Sistema visual"],
+A meta é manter consistência entre site, landings e mídia paga — uma identidade que funciona em peças longas e em formatos curtos de feed/story sem perder a leitura.`,
+      role: "Designer & Desenvolvedor Web",
+      stack: ["Figma", "WordPress", "Photoshop", "Illustrator"],
+      tags: ["Site", "WordPress", "Social Media", "Landing Page"],
     },
     {
-      slug: "campanha-norte",
-      title: "Norte / Verão 25",
-      category: "Campanha",
-      year: 2025,
+      slug: "mytripmenu",
+      title: "MyTripMenu",
+      category: "Web & Landing Pages",
+      year: 2024,
       thumbnail: {
         src: "/images/project-placeholder-2.svg",
-        alt: "Campanha Norte Verão 25",
+        alt: "MyTripMenu — site e landing pages",
       },
       summary:
-        "Campanha integrada para o lançamento de coleção de verão de uma marca de moda.",
-      description: `Direção de arte e conceito da campanha de verão da marca Norte. O trabalho envolveu pré-produção, direção do shooting fotográfico, e desdobramentos em vídeo, social, OOH e e-commerce.`,
-      role: "Direção de arte e direção criativa",
-      stack: ["Photoshop", "Premiere Pro", "Figma"],
-      tags: ["Campanha", "Moda", "Direção de arte"],
+        "Site e landing pages para a plataforma digital, com peças de divulgação.",
+      description: `Atuação como designer e desenvolvedor web da MyTripMenu, cuidando do site institucional, landing pages de produto e peças de comunicação digital.
+
+O foco é tornar cada página um caminho claro até a conversão — hierarquia visual, ritmo de informação e identidade consistente da home ao checkout.`,
+      role: "Designer & Desenvolvedor Web",
+      stack: ["Figma", "WordPress", "Photoshop"],
+      tags: ["Site", "WordPress", "Landing Page", "UI"],
     },
     {
-      slug: "produto-meridian",
-      title: "Meridian",
-      category: "UI / Produto",
-      year: 2024,
+      slug: "carmillion",
+      title: "Carmillion",
+      category: "Web & Branding",
+      year: 2023,
       thumbnail: {
         src: "/images/project-placeholder-3.svg",
-        alt: "Produto Meridian",
-      },
-      summary: "Design de produto e sistema para uma plataforma B2B de logística.",
-      description: `Repensamos a experiência completa do produto Meridian — do onboarding ao painel operacional. O sistema de design foi construído do zero, com tokens, componentes e padrões de interação documentados.`,
-      role: "Lead designer",
-      stack: ["Figma", "Claude Code"],
-      tags: ["Produto", "UI", "Design System"],
-    },
-    {
-      slug: "filme-veredas",
-      title: "Veredas",
-      category: "Motion",
-      year: 2024,
-      thumbnail: {
-        src: "/images/project-placeholder-4.svg",
-        alt: "Filme Veredas",
-      },
-      summary: "Filme institucional animado para uma marca de cafés especiais.",
-      description: `Roteiro visual, storyboard e animação de um filme institucional de 90s. A peça mistura ilustração vetorial e tipografia animada para contar a origem de cada grão.`,
-      role: "Direção de motion e animação",
-      stack: ["After Effects", "Illustrator", "Premiere Pro"],
-      tags: ["Motion", "Animação", "Filme"],
-    },
-    {
-      slug: "festival-orla",
-      title: "Festival Orla",
-      category: "Identidade de Evento",
-      year: 2023,
-      thumbnail: {
-        src: "/images/project-placeholder-5.svg",
-        alt: "Festival Orla",
-      },
-      summary: "Identidade visual de um festival multidisciplinar de design.",
-      description: `Sistema visual flexível para um festival com 3 dias, 12 palcos e 80+ atrações. O conceito gira em torno de camadas e sobreposição — uma identidade que funciona em peças impressas grandes e em telas verticais.`,
-      role: "Direção criativa",
-      stack: ["Illustrator", "Photoshop"],
-      tags: ["Identidade", "Festival", "Tipografia"],
-    },
-    {
-      slug: "rebrand-corvo",
-      title: "Corvo",
-      category: "Rebranding",
-      year: 2023,
-      thumbnail: {
-        src: "/images/project-placeholder-6.svg",
-        alt: "Rebrand Corvo",
+        alt: "Carmillion — sites e identidade visual",
       },
       summary:
-        "Reposicionamento e nova identidade para uma marca centenária de tipografia.",
-      description: `Acompanhei o reposicionamento completo da Corvo, revisitando seu repertório histórico para construir uma identidade contemporânea sem apagar a herança da marca.`,
-      role: "Direção criativa e identidade",
-      stack: ["Illustrator", "Figma", "Photoshop"],
-      tags: ["Rebranding", "Tipografia", "Heritage"],
+        "Sites institucionais e landing pages para clientes da empresa.",
+      description: `Atuação como Designer Gráfico e Web na Carmillion, desenvolvendo sites institucionais e landing pages em WordPress junto com peças de identidade aplicada e materiais para campanhas.
+
+Os projetos atravessaram diferentes verticais — cada cliente exigia um sistema visual próprio dentro do mesmo padrão de qualidade e prazo de entrega.`,
+      role: "Designer Gráfico e Web",
+      stack: ["WordPress", "Figma", "Photoshop", "Illustrator"],
+      tags: ["Site", "Branding", "Landing Page"],
     },
   ] satisfies Project[],
 
@@ -227,7 +189,7 @@ Liderei a estratégia visual, a construção do logotipo e o desenvolvimento do 
     { key: "premiere", name: "Adobe Premiere Pro", brandColor: "#9999FF" },
     { key: "aftereffects", name: "Adobe After Effects", brandColor: "#9999FF" },
     { key: "figma", name: "Figma", brandColor: "#F24E1E" },
-    { key: "gemini", name: "Google Gemini", brandColor: "#8AB4F8" },
+    { key: "wordpress", name: "WordPress", brandColor: "#21759B" },
     { key: "claude", name: "Claude Code", brandColor: "#D97757" },
     {
       key: "antigravity",

@@ -61,7 +61,7 @@ export type ToolKey =
   | "premiere"
   | "aftereffects"
   | "figma"
-  | "gemini"
+  | "wordpress"
   | "claude"
   | "antigravity";
 

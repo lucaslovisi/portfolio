@@ -1,6 +1,6 @@
 "use client";
 
-import { siFigma, siGooglegemini, siClaude } from "simple-icons";
+import { siFigma, siWordpress, siClaude } from "simple-icons";
 import type { Tool, ToolKey } from "@/types";
 
 interface SimpleIconData {
@@ -12,7 +12,7 @@ interface SimpleIconData {
 
 const SIMPLE_ICONS: Partial<Record<ToolKey, SimpleIconData>> = {
   figma: siFigma as unknown as SimpleIconData,
-  gemini: siGooglegemini as unknown as SimpleIconData,
+  wordpress: siWordpress as unknown as SimpleIconData,
   claude: siClaude as unknown as SimpleIconData,
 };
 

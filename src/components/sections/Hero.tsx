@@ -22,6 +22,12 @@ export function Hero() {
     ? [nameParts.slice(0, -1).join(" "), nameParts.slice(-1).join(" ")]
     : nameParts;
 
+  // Break the role at " & " so each chunk fits the display type comfortably.
+  const roleText = portfolio.person.role.toLowerCase();
+  const roleLines = roleText.includes(" & ")
+    ? roleText.split(" & ").map((part, i, arr) => (i === arr.length - 1 ? `${part}.` : `${part} &`))
+    : [`${roleText}.`];
+
   return (
     <section
       id="hero"
@@ -69,17 +75,19 @@ export function Hero() {
                 </motion.span>
               </span>
             ))}
-            <span className="block overflow-hidden">
-              <motion.span
-                variants={lineVariants}
-                custom={lines.length}
-                initial="hidden"
-                animate="show"
-                className="block text-[color:var(--color-accent)] will-change-transform"
-              >
-                {portfolio.person.role.toLowerCase()}.
-              </motion.span>
-            </span>
+            {roleLines.map((line, i) => (
+              <span key={`role-${i}`} className="block overflow-hidden">
+                <motion.span
+                  variants={lineVariants}
+                  custom={lines.length + i}
+                  initial="hidden"
+                  animate="show"
+                  className="block text-[color:var(--color-accent)] will-change-transform"
+                >
+                  {line}
+                </motion.span>
+              </span>
+            ))}
           </h1>
 
           <motion.div

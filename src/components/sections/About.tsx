@@ -13,7 +13,7 @@ export function About() {
   return (
     <section id="about" className="relative scroll-mt-24 py-32 sm:py-40">
       <div className="container-screen">
-        <SectionHeader index="01" label="Sobre" title={<>Design com intenção. Direção com clareza.</>} />
+        <SectionHeader index="01" label="Sobre" title={<>Design com intenção. Código com clareza.</>} />
 
         <div className="mt-16 grid grid-cols-1 gap-12 md:grid-cols-12 md:gap-10">
           <Reveal className="md:col-span-5 lg:col-span-4">
@@ -66,9 +66,9 @@ export function About() {
             </Reveal>
 
             <Reveal delay={0.3} className="mt-10 grid grid-cols-2 gap-6 border-t border-[color:var(--color-border)] pt-8 sm:grid-cols-3">
-              <Stat label="Anos atuando" value="10+" />
-              <Stat label="Projetos entregues" value="120+" />
-              <Stat label="Liderança de time" value="8 pessoas" />
+              {portfolio.person.stats.map((s) => (
+                <Stat key={s.label} label={s.label} value={s.value} />
+              ))}
             </Reveal>
           </div>
         </div>

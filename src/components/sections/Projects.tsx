@@ -33,34 +33,31 @@ export function Projects() {
         />
 
         <Stagger gap={0.1} className="mt-16 grid grid-cols-1 gap-6 md:grid-cols-12 md:gap-8">
-          {portfolio.projects.map((project, i) => (
-            <motion.button
-              key={project.slug}
-              variants={staggerItem}
-              type="button"
-              onClick={() => setActive(project)}
-              aria-label={`Abrir projeto ${project.title}`}
-              data-cursor="hover"
-              className={cn(
-                "group relative flex flex-col text-left transition-transform duration-500",
-                // staggered column spans for varied grid
-                i % 5 === 0
-                  ? "md:col-span-7"
-                  : i % 5 === 1
-                  ? "md:col-span-5"
-                  : i % 5 === 2
-                  ? "md:col-span-5"
-                  : i % 5 === 3
-                  ? "md:col-span-7"
-                  : "md:col-span-6"
-              )}
-            >
-              <div className="relative aspect-[16/10] w-full overflow-hidden rounded-xl border border-[color:var(--color-border)] bg-[color:var(--color-surface)]">
+          {portfolio.projects.map((project, i) => {
+            const total = portfolio.projects.length;
+            const spanCls = projectSpan(i, total);
+            return (
+              <motion.button
+                key={project.slug}
+                variants={staggerItem}
+                type="button"
+                onClick={() => setActive(project)}
+                aria-label={`Abrir projeto ${project.title}`}
+                data-cursor="hover"
+                className={cn(
+                  "group relative flex flex-col text-left transition-transform duration-500",
+                  spanCls
+                )}
+              >
+              <div className={cn(
+                "relative w-full overflow-hidden rounded-xl border border-[color:var(--color-border)] bg-[color:var(--color-surface)]",
+                spanCls.includes("col-span-12") ? "aspect-[21/9]" : "aspect-[16/10]"
+              )}>
                 <Image
                   src={project.thumbnail.src}
                   alt={project.thumbnail.alt}
                   fill
-                  sizes="(max-width: 768px) 92vw, 50vw"
+                  sizes={spanCls.includes("col-span-12") ? "(max-width: 768px) 92vw, 95vw" : "(max-width: 768px) 92vw, 50vw"}
                   className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                 />
                 <div
@@ -89,8 +86,9 @@ export function Projects() {
                   {project.year}
                 </span>
               </div>
-            </motion.button>
-          ))}
+              </motion.button>
+            );
+          })}
         </Stagger>
       </div>
 
@@ -100,6 +98,17 @@ export function Projects() {
       />
     </section>
   );
+}
+
+function projectSpan(i: number, total: number): string {
+  // Small counts get a featured layout: first card full width, rest 6+6.
+  if (total === 1) return "md:col-span-12";
+  if (total === 2) return "md:col-span-6";
+  if (total === 3) return i === 0 ? "md:col-span-12" : "md:col-span-6";
+  if (total === 4) return i % 2 === 0 ? "md:col-span-7" : "md:col-span-5";
+  // 5+ cards: staggered pattern with varied widths
+  const pattern = ["md:col-span-7", "md:col-span-5", "md:col-span-5", "md:col-span-7", "md:col-span-6", "md:col-span-6"];
+  return pattern[i % pattern.length];
 }
 
 function ProjectModal({ project, onClose }: { project: Project | null; onClose: () => void }) {
