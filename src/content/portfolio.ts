@@ -139,6 +139,25 @@ Trabalho do conceito visual ao produto final — atravessando design gráfico, d
   /* -------------------------------------------------------------- */
   projects: [
     {
+      slug: "kyvo",
+      title: "Kyvo",
+      category: "Web & Produto",
+      year: 2025,
+      thumbnail: {
+        src: "/images/project-placeholder-kyvo.svg",
+        alt: "Kyvo — CRM contábil com IA",
+      },
+      summary:
+        "Identidade e landing page para um CRM contábil com agente de IA.",
+      description: `O Kyvo é uma plataforma de CRM, atendimento e automação feita sob medida para escritórios contábeis — com agente de IA, gestão de WhatsApp e Instagram em um único painel, pipeline visual e automações de qualificação e follow-up.
+
+Conduzi a identidade visual e a landing page institucional: paleta carvão + laranja, sistema tipográfico, hierarquia das seções (proposta, agente de IA, pipeline, planos) e construção do site com deploy na Vercel.`,
+      role: "Designer & Desenvolvedor Web",
+      stack: ["Next.js", "Figma", "Tailwind CSS"],
+      url: "https://kyvo.app.br/",
+      tags: ["Site", "Produto", "SaaS", "Landing"],
+    },
+    {
       slug: "mobo-cupons",
       title: "Mobo Cupons",
       category: "Web & Identidade",
