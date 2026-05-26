@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { siFigma, siGooglegemini, siClaude } from "simple-icons";
 import type { Tool, ToolKey } from "@/types";
 
@@ -55,7 +54,8 @@ export function ToolIcon({ tool, colored = false, size = 36, className }: Props)
 
   if (custom) {
     return (
-      <Image
+      // eslint-disable-next-line @next/next/no-img-element
+      <img
         src={custom}
         alt={tool.name}
         width={size}

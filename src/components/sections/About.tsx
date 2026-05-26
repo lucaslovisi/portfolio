@@ -27,6 +27,7 @@ export function About() {
                   src={portfolio.person.photo.src}
                   alt={portfolio.person.photo.alt}
                   fill
+                  priority
                   sizes="(max-width: 768px) 90vw, 33vw"
                   className="object-cover grayscale transition duration-700 hover:grayscale-0"
                 />
