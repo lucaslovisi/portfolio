@@ -164,8 +164,8 @@ Conduzi a identidade visual e a landing page institucional: paleta carvão + lar
       category: "Identidade Visual",
       year: 2025,
       thumbnail: {
-        src: "/images/clarice-rezende.jpg",
-        alt: "Identidade visual da Dra. Clarice Rezende",
+        src: "/images/clarice-rezende-card.jpg",
+        alt: "Identidade visual da Dra. Clarice Rezende — cartão",
       },
       summary:
         "Identidade visual completa para a advogada Dra. Clarice Rezende — logotipo, sistema de marca e peças sociais.",
