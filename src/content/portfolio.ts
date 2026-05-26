@@ -38,9 +38,9 @@ export const portfolio = {
      * Bio completa exibida na seção Sobre.
      * Use \n\n para quebrar parágrafos.
      */
-    bio: `Sou Designer Gráfico e Web Designer com 5 anos de experiência criando sites, identidades e peças para social media. Atuo hoje como Designer & Desenvolvedor Web nas marcas Mobo Cupons e MyTripMenu, levando o projeto da concepção visual ao desenvolvimento em WordPress.
+    bio: `Sou Designer Gráfico, Desenvolvedor Web e Editor de vídeos com 5 anos de experiência criando identidades, sites, peças sociais e conteúdo audiovisual.
 
-Curso Análise e Desenvolvimento de Sistemas na UNISINOS, o que mantém meu trabalho na fronteira entre design e código — sites que funcionam tão bem quanto parecem.`,
+Trabalho do conceito visual ao produto final — atravessando design gráfico, desenvolvimento em múltiplas plataformas web, motion e edição. Curso Análise e Desenvolvimento de Sistemas na UNISINOS, o que mantém meu trabalho na fronteira entre design e código.`,
     /** Foto principal exibida no Sobre. Coloque em /public/images/. */
     photo: {
       src: "/images/lucas.jpg",
@@ -48,18 +48,18 @@ Curso Análise e Desenvolvimento de Sistemas na UNISINOS, o que mantém meu trab
     },
     /** Áreas de atuação exibidas como tags no Sobre. */
     focusAreas: [
-      "Web Design",
-      "WordPress",
       "Design Gráfico",
+      "Web Design",
+      "Edição de Vídeo",
+      "Motion",
       "Branding",
       "Social Media",
-      "SEO",
     ],
     /** Estatísticas exibidas no Sobre (até 3 itens). */
     stats: [
       { label: "Anos atuando", value: "5+" },
       { label: "Projetos entregues", value: "30+" },
-      { label: "Sites em WordPress", value: "20+" },
+      { label: "Disciplinas", value: "3" },
     ],
   },
 
@@ -80,9 +80,9 @@ Curso Análise e Desenvolvimento de Sistemas na UNISINOS, o que mantém meu trab
   /*  REDES SOCIAIS                                                 */
   /* -------------------------------------------------------------- */
   socials: [
-    { key: "linkedin", label: "LinkedIn", href: "https://linkedin.com/in/lucaslovisi" },
-    { key: "instagram", label: "Instagram", href: "https://instagram.com/lucaslovisi" },
-    { key: "behance", label: "Behance", href: "https://behance.net/lucaslovisi" },
+    { key: "linkedin", label: "LinkedIn", href: "https://www.linkedin.com/notifications/?filter=all" },
+    { key: "instagram", label: "Instagram", href: "https://www.instagram.com/lucas_lovisi/" },
+    { key: "behance", label: "Behance", href: "https://www.behance.net/lucaslovisi" },
     { key: "email", label: "E-mail", href: "mailto:lucaslovisi2018@gmail.com" },
   ] satisfies Social[],
 
@@ -91,11 +91,25 @@ Curso Análise e Desenvolvimento de Sistemas na UNISINOS, o que mantém meu trab
   /* -------------------------------------------------------------- */
   experiences: [
     {
+      role: "Head de Design",
+      company: "LVX Digital",
+      period: "Dez 2025 — Atual",
+      description:
+        "Liderança criativa e direção visual do estúdio. Estratégia de marca, padrões de qualidade do time e atuação direta nos projetos de maior relevância — do conceito ao acabamento final.",
+    },
+    {
+      role: "Designer Pleno",
+      company: "LVX Digital",
+      period: "Out 2025 — Dez 2025",
+      description:
+        "Entrada no estúdio atuando em design gráfico, web e audiovisual. Promovido a Head de Design em dezembro após dois meses contribuindo em projetos de marca, site e conteúdo.",
+    },
+    {
       role: "Designer & Desenvolvedor Web",
       company: "Mobo Cupons & MyTripMenu",
-      period: "2024 — Atual",
+      period: "2024 — Set 2025",
       description:
-        "Sites institucionais e landing pages em WordPress, identidade aplicada em campanhas e peças contínuas para social media. Atuação ponta a ponta entre design visual e implementação.",
+        "Sites institucionais e landing pages, identidade aplicada em campanhas e peças contínuas para social media. Atuação ponta a ponta entre design visual e implementação.",
     },
     {
       role: "Designer Gráfico e Web",
@@ -109,7 +123,7 @@ Curso Análise e Desenvolvimento de Sistemas na UNISINOS, o que mantém meu trab
       company: "Projetos independentes",
       period: "2021 — 2023",
       description:
-        "Sites em WordPress, identidades visuais e peças para social media para pequenos negócios e marcas autorais. Aprendizado direto com cliente — briefing, entrega e ajustes.",
+        "Sites, identidades visuais e peças para social media para pequenos negócios e marcas autorais. Aprendizado direto com cliente — briefing, entrega e ajustes.",
     },
     {
       role: "Iniciando em design",
