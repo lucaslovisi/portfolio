@@ -1,0 +1,11 @@
+{
+  "name": "Portfólio — Head de Design",
+  "short_name": "Portfólio",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0b0a",
+  "theme_color": "#0a0b0a",
+  "icons": [
+    { "src": "/favicon.ico", "sizes": "any", "type": "image/x-icon" }
+  ]
+}
