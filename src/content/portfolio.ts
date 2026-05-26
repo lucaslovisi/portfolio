@@ -212,12 +212,7 @@ O sistema busca um equilíbrio entre confiança e contemporaneidade — uma marc
     { key: "figma", name: "Figma", brandColor: "#F24E1E" },
     { key: "wordpress", name: "WordPress", brandColor: "#21759B" },
     { key: "claude", name: "Claude Code", brandColor: "#D97757" },
-    {
-      key: "antigravity",
-      name: "Antigravity",
-      brandColor: "#B6FF3A",
-      customIcon: "/icons/antigravity.svg",
-    },
+    { key: "n8n", name: "n8n", brandColor: "#EA4B71" },
   ] satisfies Tool[],
 
   /* -------------------------------------------------------------- */

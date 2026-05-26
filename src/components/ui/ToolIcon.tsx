@@ -1,6 +1,6 @@
 "use client";
 
-import { siFigma, siWordpress, siClaude } from "simple-icons";
+import { siFigma, siWordpress, siClaude, siN8n } from "simple-icons";
 import type { Tool, ToolKey } from "@/types";
 
 interface SimpleIconData {
@@ -14,6 +14,7 @@ const SIMPLE_ICONS: Partial<Record<ToolKey, SimpleIconData>> = {
   figma: siFigma as unknown as SimpleIconData,
   wordpress: siWordpress as unknown as SimpleIconData,
   claude: siClaude as unknown as SimpleIconData,
+  n8n: siN8n as unknown as SimpleIconData,
 };
 
 const CUSTOM: Partial<Record<ToolKey, string>> = {
@@ -21,7 +22,6 @@ const CUSTOM: Partial<Record<ToolKey, string>> = {
   illustrator: "/icons/illustrator.svg",
   premiere: "/icons/premiere.svg",
   aftereffects: "/icons/aftereffects.svg",
-  antigravity: "/icons/antigravity.svg",
 };
 
 interface Props {

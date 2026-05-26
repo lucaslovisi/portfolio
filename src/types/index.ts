@@ -69,7 +69,7 @@ export type ToolKey =
   | "figma"
   | "wordpress"
   | "claude"
-  | "antigravity";
+  | "n8n";
 
 export interface Tool {
   key: ToolKey;
