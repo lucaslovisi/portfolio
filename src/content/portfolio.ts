@@ -14,7 +14,7 @@ export const portfolio = {
   /* -------------------------------------------------------------- */
   site: {
     /** URL pública final (sem barra no fim). Usada em metadata/OG/sitemap. */
-    url: "https://portfolio-rho-ten-fhvblpunu9.vercel.app",
+    url: "https://lucaslovisi.vercel.app",
     /** Timezone exibido no relógio do hero. */
     timezone: "America/Sao_Paulo",
     timezoneLabel: "São Leopoldo, RS",
