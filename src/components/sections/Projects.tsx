@@ -53,13 +53,41 @@ export function Projects() {
                 "relative w-full overflow-hidden rounded-xl border border-[color:var(--color-border)] bg-[color:var(--color-surface)]",
                 spanCls.includes("col-span-12") ? "aspect-[21/9]" : "aspect-[16/10]"
               )}>
-                <Image
-                  src={project.thumbnail.src}
-                  alt={project.thumbnail.alt}
-                  fill
-                  sizes={spanCls.includes("col-span-12") ? "(max-width: 768px) 92vw, 95vw" : "(max-width: 768px) 92vw, 50vw"}
-                  className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-                />
+                {project.preview === "browser" && (
+                  <div
+                    aria-hidden
+                    className="pointer-events-none absolute inset-x-0 top-0 z-10 flex h-8 items-center gap-3 border-b border-[color:var(--color-border)] bg-[color:var(--color-bg)]/90 px-3 backdrop-blur-md sm:h-9 sm:px-4"
+                  >
+                    <div className="flex shrink-0 items-center gap-1.5">
+                      <span className="size-2.5 rounded-full bg-[#ff5f57]" />
+                      <span className="size-2.5 rounded-full bg-[#febc2e]" />
+                      <span className="size-2.5 rounded-full bg-[#28c840]" />
+                    </div>
+                    <div className="hidden flex-1 items-center justify-center rounded-md border border-[color:var(--color-border)] bg-[color:var(--color-surface)] px-2 py-0.5 text-[10px] font-mono text-[color:var(--color-text-muted)] sm:flex">
+                      <span className="truncate">
+                        {project.url ? project.url.replace(/^https?:\/\//, "").replace(/\/$/, "") : project.title.toLowerCase()}
+                      </span>
+                    </div>
+                    <span className="flex shrink-0 sm:hidden font-mono text-[10px] uppercase tracking-[0.18em] text-[color:var(--color-text-muted)]">
+                      site
+                    </span>
+                  </div>
+                )}
+                <div className={cn(
+                  "absolute inset-0",
+                  project.preview === "browser" && "top-8 sm:top-9"
+                )}>
+                  <Image
+                    src={project.thumbnail.src}
+                    alt={project.thumbnail.alt}
+                    fill
+                    sizes={spanCls.includes("col-span-12") ? "(max-width: 768px) 92vw, 95vw" : "(max-width: 768px) 92vw, 50vw"}
+                    className={cn(
+                      "transition-transform duration-700 ease-out group-hover:scale-105",
+                      project.preview === "browser" ? "object-cover object-top" : "object-cover"
+                    )}
+                  />
+                </div>
                 <div
                   aria-hidden
                   className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[color:var(--color-bg)]/70 via-transparent to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100"

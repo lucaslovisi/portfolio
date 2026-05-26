@@ -53,6 +53,12 @@ export interface Project {
   url?: string;
   /** Tags livres. */
   tags?: string[];
+  /**
+   * Tratamento visual especial do card:
+   *  - "browser": mostra a thumbnail dentro de uma janela de navegador
+   *    (perfeito p/ projetos de site).
+   */
+  preview?: "browser";
 }
 
 export type ToolKey =

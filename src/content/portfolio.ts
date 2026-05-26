@@ -144,7 +144,7 @@ Trabalho do conceito visual ao produto final — atravessando design gráfico, d
       category: "Web & Produto",
       year: 2025,
       thumbnail: {
-        src: "/images/project-placeholder-kyvo.svg",
+        src: "/images/kyvo.png",
         alt: "Kyvo — CRM contábil com IA",
       },
       summary:
@@ -156,61 +156,49 @@ Conduzi a identidade visual e a landing page institucional: paleta carvão + lar
       stack: ["Next.js", "Figma", "Tailwind CSS"],
       url: "https://kyvo.app.br/",
       tags: ["Site", "Produto", "SaaS", "Landing"],
+      preview: "browser",
     },
     {
-      slug: "mobo-cupons",
-      title: "Mobo Cupons",
-      category: "Web & Identidade",
-      year: 2024,
+      slug: "clarice-rezende",
+      title: "Dra. Clarice Rezende",
+      category: "Identidade Visual",
+      year: 2025,
       thumbnail: {
-        src: "/images/project-placeholder-1.svg",
-        alt: "Mobo Cupons — design e desenvolvimento web",
+        src: "/images/clarice-rezende.jpg",
+        alt: "Identidade visual da Dra. Clarice Rezende",
       },
       summary:
-        "Site, landing pages e peças sociais para plataforma de cupons de desconto.",
-      description: `Trabalho contínuo de design e desenvolvimento web para a Mobo Cupons. O escopo cobre o site institucional em WordPress, landing pages para campanhas pontuais e um sistema visual aplicado em peças recorrentes de social media.
+        "Identidade visual completa para a advogada Dra. Clarice Rezende — logotipo, sistema de marca e peças sociais.",
+      description: `Identidade visual completa para a advogada Dra. Clarice Rezende. O projeto cobre logotipo, sistema gráfico, paleta, tipografia, papelaria e desdobramentos para social media.
 
-A meta é manter consistência entre site, landings e mídia paga — uma identidade que funciona em peças longas e em formatos curtos de feed/story sem perder a leitura.`,
-      role: "Designer & Desenvolvedor Web",
-      stack: ["Figma", "WordPress", "Photoshop", "Illustrator"],
-      tags: ["Site", "WordPress", "Social Media", "Landing Page"],
+O sistema busca um equilíbrio entre confiança e contemporaneidade — uma marca sóbria, mas com personalidade, capaz de transitar entre peças institucionais e formatos digitais.`,
+      role: "Direção de identidade e design",
+      stack: ["Illustrator", "Photoshop"],
+      url: "https://www.behance.net/gallery/235090809/Identidade-Visual-Dra-Clarice-Rezende",
+      tags: ["Branding", "Identidade", "Logo", "Social Media"],
     },
-    {
-      slug: "mytripmenu",
-      title: "MyTripMenu",
-      category: "Web & Landing Pages",
-      year: 2024,
-      thumbnail: {
-        src: "/images/project-placeholder-2.svg",
-        alt: "MyTripMenu — site e landing pages",
-      },
-      summary:
-        "Site e landing pages para a plataforma digital, com peças de divulgação.",
-      description: `Atuação como designer e desenvolvedor web da MyTripMenu, cuidando do site institucional, landing pages de produto e peças de comunicação digital.
-
-O foco é tornar cada página um caminho claro até a conversão — hierarquia visual, ritmo de informação e identidade consistente da home ao checkout.`,
-      role: "Designer & Desenvolvedor Web",
-      stack: ["Figma", "WordPress", "Photoshop"],
-      tags: ["Site", "WordPress", "Landing Page", "UI"],
-    },
-    {
-      slug: "carmillion",
-      title: "Carmillion",
-      category: "Web & Branding",
-      year: 2023,
-      thumbnail: {
-        src: "/images/project-placeholder-3.svg",
-        alt: "Carmillion — sites e identidade visual",
-      },
-      summary:
-        "Sites institucionais e landing pages para clientes da empresa.",
-      description: `Atuação como Designer Gráfico e Web na Carmillion, desenvolvendo sites institucionais e landing pages em WordPress junto com peças de identidade aplicada e materiais para campanhas.
-
-Os projetos atravessaram diferentes verticais — cada cliente exigia um sistema visual próprio dentro do mesmo padrão de qualidade e prazo de entrega.`,
-      role: "Designer Gráfico e Web",
-      stack: ["WordPress", "Figma", "Photoshop", "Illustrator"],
-      tags: ["Site", "Branding", "Landing Page"],
-    },
+    /**
+     * ⬇️  TERCEIRO PROJETO — A DECIDIR
+     * Quando definir, descomente o bloco abaixo, ajuste os campos
+     * e troque o thumbnail (coloque a imagem em /public/images/).
+     *
+     * {
+     *   slug: "novo-projeto",
+     *   title: "Novo Projeto",
+     *   category: "Categoria",
+     *   year: 2025,
+     *   thumbnail: {
+     *     src: "/images/novo-projeto.jpg",
+     *     alt: "Descrição da imagem",
+     *   },
+     *   summary: "Resumo de 1-2 frases.",
+     *   description: `Descrição completa do projeto.\n\nSegundo parágrafo.`,
+     *   role: "Seu papel",
+     *   stack: ["Ferramenta 1", "Ferramenta 2"],
+     *   url: "https://link-externo.com",
+     *   tags: ["Tag 1", "Tag 2"],
+     * },
+     */
   ] satisfies Project[],
 
   /* -------------------------------------------------------------- */
