@@ -80,7 +80,7 @@ Trabalho do conceito visual ao produto final — atravessando design gráfico, d
   /*  REDES SOCIAIS                                                 */
   /* -------------------------------------------------------------- */
   socials: [
-    { key: "linkedin", label: "LinkedIn", href: "https://www.linkedin.com/notifications/?filter=all" },
+    { key: "linkedin", label: "LinkedIn", href: "https://www.linkedin.com/in/lucas-lovisi-44a441241/" },
     { key: "instagram", label: "Instagram", href: "https://www.instagram.com/lucas_lovisi/" },
     { key: "behance", label: "Behance", href: "https://www.behance.net/lucaslovisi" },
     { key: "email", label: "E-mail", href: "mailto:lucaslovisi2018@gmail.com" },
