@@ -43,7 +43,7 @@ export const portfolio = {
 Curso Análise e Desenvolvimento de Sistemas na UNISINOS, o que mantém meu trabalho na fronteira entre design e código — sites que funcionam tão bem quanto parecem.`,
     /** Foto principal exibida no Sobre. Coloque em /public/images/. */
     photo: {
-      src: "/images/profile-placeholder.svg",
+      src: "/images/lucas.jpg",
       alt: "Lucas Lovisi",
     },
     /** Áreas de atuação exibidas como tags no Sobre. */
